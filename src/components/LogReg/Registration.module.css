@@ -1,0 +1,60 @@
+.loginBarContainer{
+    display: flex;
+    justify-content:center;
+    gap: 5rem;
+    padding: 20px 50px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.hidden{
+    display: none;
+}
+.regForm{
+    display: flex;
+    flex-direction: column;
+}
+.loginBarElement a{
+    color: black;
+    text-decoration: none;
+}
+.loginBarElement:hover{
+    color: #1F6521;
+    transition: 1s;
+    cursor: pointer;
+}
+.regContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    top: -293px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    gap: 2rem;
+}
+.regContainer h1{
+    font-size: 2.5rem;
+}
+.logRegBtn{
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+    border: none;
+    background-color: white;
+    height: 2rem;
+    cursor: pointer;
+    color: #1F6521;
+
+}
+.logRegBtn a{
+    text-decoration: none;
+    color: #1F6521;
+}
+@media (max-width:768px) {
+    .loginBar{
+        display: none;
+    }
+}

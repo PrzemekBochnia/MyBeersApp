@@ -1,0 +1,75 @@
+.beersToDrinkContainer{
+    display: none;
+}
+.beerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.showBeersToDrink{
+    display: flex;
+    flex-direction: column;
+}
+.showBeersToDrink label{
+    color: #1F6521;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+}
+.showBeersToDrink input{
+    height: 1.5rem  ;
+    width: 50%;
+    border: none;
+    background-color: #1f652188;
+}
+.smallImg{
+    width: 100px;
+    height: 100px;
+}
+.smallImg[src=""]{
+    display: none;
+}
+.formBtn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.allBeers{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    color: #1F6521;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.image{
+    width: 200px;
+    height: 200px;
+}
+.image[src=""]{
+    display: none;
+}
+.beerListItem{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.removeBeerBtn{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #1F6521;
+    border: none;
+    cursor: pointer;
+    width: 15rem;   
+    height: 3rem;
+    border-radius: 20% 0 50% 0;
+    margin-bottom: 1rem;
+}
+.removeBeerBtn:hover{
+    color: red;
+    transition: 0.5s;
+}

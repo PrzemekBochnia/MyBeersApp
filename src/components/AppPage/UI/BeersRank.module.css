@@ -1,0 +1,47 @@
+.rankContainer{
+    display: none;
+}
+.showRank{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.showRank h2{
+align-self: center;
+font-size: 2.5rem;
+padding: 2rem;
+font-family: 'Roboto Slab', serif;
+color: #1F6521;
+}
+.beersRank{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    color: #1F6521;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.image{
+    width: 200px;
+    height: 200px;
+}
+.image[src=""]{
+    display: none;
+  }
+.beerListItem{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rankBeersContainer:first-of-type{
+    color: gold;
+}
+.rankBeersContainer:nth-of-type(2){
+    color: grey;
+}
+.rankBeersContainer:nth-of-type(3){
+    color: #ae661f;
+}

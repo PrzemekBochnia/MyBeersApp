@@ -1,0 +1,11 @@
+.hidden{
+    display: none;
+}
+.welcomeUserContainer h2{
+    color: #1F6521;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 100px;
+    max-width: auto;
+}

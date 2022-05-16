@@ -1,0 +1,45 @@
+.addBeerForm{
+  display: none;
+}
+.beerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.active{
+  display: flex;
+  flex-direction: column;
+}
+.active label{
+  color: #1F6521;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+}
+.active input{
+  height: 1.5rem  ;
+  width: 50%;
+  border: none;
+  background-color: #1f652188;
+}
+.active select{
+  height: 1.5rem  ;
+  width: 50%;
+  border: none;
+  background-color: #1f652188;
+  color: #1f652188;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+.smallImg{
+  width: 100px;
+  height: 100px;
+}
+.smallImg[src=""]{
+  display: none;
+}
+.formBtn{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

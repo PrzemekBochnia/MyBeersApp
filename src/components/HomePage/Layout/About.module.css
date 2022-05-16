@@ -1,0 +1,44 @@
+.about{
+    background-color: black;
+    min-height: 45rem;
+    position: relative;
+}
+.about a{
+  color: black;
+  text-decoration: none;
+}
+.about a:hover{
+  color: #1f6521dd;
+  transition: 1s;
+}
+.summary {
+    text-align: center;
+    max-width: 45rem;
+    width: 70%;
+    margin: auto;
+    margin-top: -5rem;
+    position: relative;
+    background-color: #1f6521dd;
+    color: white;
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto Slab', serif;
+
+  }
+  .summary h2 {
+    font-size: 3rem;
+  }
+  .summary p{
+    font-size: 2rem;
+    padding: 20px 0;
+  }
+  .aboutBtn{
+    width: 60%;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 2rem;
+    border-radius: 14px;
+  }

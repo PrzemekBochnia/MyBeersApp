@@ -1,0 +1,14 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+.footerLogo{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 1.5rem;
+}
+.footerLogo span{
+    color: #1F6521;
+    font-size: 2rem;
+}
