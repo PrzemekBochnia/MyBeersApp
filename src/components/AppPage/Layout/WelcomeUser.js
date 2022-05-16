@@ -7,7 +7,7 @@ const WelcomeUser = ({welcome}) =>{
     return(
         <>
         <div className={welcome ? classes.welcomeUserContainer : classes.hidden}>
-            <h2> Hi {currentUser.email} on the left side you will find the menu, use it to add a new beer to your list.</h2>
+            <h2> Hi {currentUser && currentUser.email} on the left side you will find the menu, use it to add a new beer to your list.</h2>
         </div>
         </>
     )

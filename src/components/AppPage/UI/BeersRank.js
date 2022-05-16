@@ -38,7 +38,7 @@ const BeersRank = ({showRank}) =>{
         fetchBeers().catch((error)=>{
             setError(error.message);
         })
-    },[]);
+    },[currentUser]);
   
         beers.sort((a, b) => (parseInt (a.rate) < parseInt(b.rate)) ? 1 : -1 );
         const BeersRank = beers.map((beer)=>{
@@ -56,8 +56,6 @@ const BeersRank = ({showRank}) =>{
                         <div>
                         <img className={classes.image} src={beer.foto} alt='smallBeer'/>
                         </div>
-                        {/* <button className={classes.removeBeerBtn} onClick={()=>removeHandler(beer.id)}> Remove</button>
-                        {error} */}
                     </ul>
             </div>
             )

@@ -14,6 +14,7 @@ const BeerList = ({showBeerList}) =>{
             throw new Error('Something went wrong!')
           }
           const responseData = await response.json();
+          console.log(responseData);
           const loadedBeers = [];
           for(const key in responseData){
             loadedBeers.push({
@@ -34,7 +35,7 @@ const BeerList = ({showBeerList}) =>{
         fetchBeers().catch((error)=>{
             setError(error.message);
         })
-    },[]);
+    },[currentUser]);
     const removeHandler = async (itemId,id)=>{      
       let newList = [...beers]              
               newList = beers.filter(({id})=> id !== itemId)
@@ -57,6 +58,7 @@ const BeerList = ({showBeerList}) =>{
             })
             window.location.reload();
           };
+          console.log(beers);
           
       const beerList = beers.map((beer)=>{
           return(

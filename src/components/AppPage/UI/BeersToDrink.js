@@ -59,7 +59,7 @@ const BeersToDrink = ({showBeersToDrink}) =>{
         fetchBeers().catch((error)=>{
             setError(error.message);
         })
-    },[]);
+    },[currentUser]);
 
     const removeHandler = async (itemId,id)=>{      
         let newList = [...beers]              
@@ -97,7 +97,6 @@ const BeersToDrink = ({showBeersToDrink}) =>{
                  </div>
                 )
             });
-
 
     return(
         <div className={showBeersToDrink ? classes.showBeersToDrink : classes.beersToDrinkContainer}>
