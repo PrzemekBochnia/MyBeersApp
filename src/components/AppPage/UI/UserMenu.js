@@ -11,7 +11,7 @@ import classes from "./UserMenu.module.css";
 const UserMenu = () =>{
 
     const[isActive, setActive] = useState(false);
-    const[showBeerList, setShowBeerList] = useState(false);
+    const[showBeerList, setShowBeerList] = useState(true);
     const[showBeersToDrink, setShowBeersToDrink] = useState(false);
     const[showRank, setShowRank] = useState(false);
     const[welcome, setWelcome] = useState(true)
@@ -29,21 +29,21 @@ const UserMenu = () =>{
         }
     };
     const toggleClass = () =>{
-        setActive(!isActive)
+        setActive(true)
         setShowBeerList(false)
         setShowRank(false)
         setShowBeersToDrink(false)
         setWelcome(false)
     }; 
     const switchBeerList = () =>{   
-        setShowBeerList(!showBeerList)
+        setShowBeerList(true)
         setActive(false)
         setShowBeersToDrink(false)
         setShowRank(false)
         setWelcome(false)
     };
     const switchBeersToDrink = () =>{   
-        setShowBeersToDrink(!showBeersToDrink)
+        setShowBeersToDrink(true)
         setActive(false)
         setShowBeerList(false)
         setShowRank(false)
@@ -51,14 +51,14 @@ const UserMenu = () =>{
 
     };
     const switchRank = () =>{
-        setShowRank(!showRank)
+        setShowRank(true)
         setActive(false)
         setShowBeerList(false)
         setShowBeersToDrink(false)
         setWelcome(false)
     };
     const switchWelcomeUser = () =>{
-        setWelcome(!welcome)
+        setWelcome(true)
         setActive(false)
         setShowBeerList(false)
         setShowBeersToDrink(false)
@@ -75,11 +75,11 @@ const UserMenu = () =>{
             <button className={classes.userMenuBtn} onClick={()=>toggleClass()}>Add new beer</button>
             <button className={classes.userMenuBtn} onClick={()=>handleLogout()}><Link to="/">Log Out</Link></button>
         </div>
+        <WelcomeUser welcome = {welcome}/>
         <BeerForm isActive={isActive}/>
         <BeerList showBeerList={showBeerList}/>
         <BeersToDrink showBeersToDrink={showBeersToDrink}/>
         <BeersRank showRank = {showRank} />
-        <WelcomeUser welcome = {welcome}/>
         </>
     )
 };
