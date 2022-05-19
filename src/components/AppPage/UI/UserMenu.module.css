@@ -5,7 +5,7 @@
     position: fixed;
     width: 15rem;
     padding: 20px;
-    gap: 2rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto Slab', serif;
@@ -57,6 +57,6 @@
 @media(max-width:768px){
     .userMenuContainer{
         top: 0;
-        gap: 2rem;
+        gap: 1rem;
     }
 }

@@ -14,7 +14,6 @@ const BeerList = ({showBeerList}) =>{
             throw new Error('Something went wrong!')
           }
           const responseData = await response.json();
-          console.log(responseData);
           const loadedBeers = [];
           for(const key in responseData){
             loadedBeers.push({
@@ -58,8 +57,7 @@ const BeerList = ({showBeerList}) =>{
             })
             window.location.reload();
           };
-          console.log(beers);
-          
+        
       const beerList = beers.map((beer)=>{
           return(
             <div key={beer.id} >
@@ -74,7 +72,7 @@ const BeerList = ({showBeerList}) =>{
                       <li>Rate: {beer.rate}</li>
                       <div>
                       <img className={classes.image} src={beer.foto} alt='smallBeer'/>
-                      </div>
+                      </div>  
                       <button className={classes.removeBeerBtn} onClick={()=>removeHandler(beer.id)}> Remove</button>
                       {error}
                   </ul>

@@ -1,0 +1,54 @@
+.image{
+    width: 200px;
+    height: 200px;
+}
+.image[src=""]{
+    display: none;
+}
+.showSearchList{
+    display: flex;
+    flex-direction: column;
+}
+.showSearchList h2{
+    align-self: center;
+    color: #1F6521;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+}
+.showSearchList input{
+    align-self: center;
+    height: 1.5rem  ;
+    width: 50%;
+    border: none;
+    background-color: #1f652188;
+}
+.showSearchList button{
+    align-self: center;
+    margin:  2rem 0;
+    width: 50%;
+    border: none;
+    background-color: #1f652188;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    color: #1F6521;
+    cursor: pointer;
+}
+.beerListItem{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.searchedList{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    color: #1F6521;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.hidden{
+    display: none;
+}

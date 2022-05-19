@@ -31,6 +31,17 @@
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
 }
+
+.submitBtn{
+  margin-top: 1rem;
+  width: 50%;
+  border: none;
+  background-color: #1f652188;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  color: #1F6521;
+  cursor: pointer;
+}
 .smallImg{
   width: 100px;
   height: 100px;

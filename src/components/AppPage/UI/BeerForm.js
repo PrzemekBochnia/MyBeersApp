@@ -102,7 +102,7 @@ const BeerForm = ({isActive}) => {
        <input type="number" id="quantity" name="quantity" min="1" max="10" onChange={event=>{handleBitter(event)}}></input>   
        <label htmlFor="quantity">Rate</label>
        <input type="number" id="quantity" name="quantity" min="1" max="100"  onChange={event=>{handleRate(event)}}></input>
-       <button>Submit</button>
+       <button className={classes.submitBtn}>Submit</button>
      </form>
     </div>
   );
