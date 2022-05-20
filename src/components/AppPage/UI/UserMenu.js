@@ -78,6 +78,7 @@ const UserMenu = () =>{
         setShowRank(false)
     }
 
+
     return(
         <>
         <div className={classes.userMenuContainer}>

@@ -26,7 +26,8 @@ const BeerList = ({showBeerList}) =>{
               bitter: responseData[key].bitter,
               flavor: responseData[key].flavor,
               rate: responseData[key].rate,
-              foto: responseData[key].foto
+              foto: responseData[key].foto,
+              date: responseData[key].date
             })
           }
           setBeers(loadedBeers)          
@@ -62,6 +63,7 @@ const BeerList = ({showBeerList}) =>{
           return(
             <div key={beer.id} >
               <ul className={classes.beerListItem} key={beer.id}>
+                      <li>Date: {beer.date}</li>
                       <li> Beer Name: {beer.beerName}</li>
                       <li>Brewery: {beer.brewery}</li>
                       <li>Description: {beer.description}</li>

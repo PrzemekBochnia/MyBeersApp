@@ -17,6 +17,11 @@ const BeerForm = ({isActive}) => {
   const[flavor, setFlavor] = useState('');
   const[rate, setRate] = useState('');
   const {currentUser} = useAuth();
+  const[date,setDate] = useState('');
+
+  const newDate =  new Date().toDateString();
+  // setDate(newDate)
+  console.log(newDate);
 
   const handleBeerName = (event) =>{
     setBeerName(event.target.value)
@@ -63,7 +68,8 @@ const BeerForm = ({isActive}) => {
         bitter: bitter,
         flavor: flavor,
         rate: rate,
-        foto: imgUrl
+        foto: imgUrl,
+        date: newDate
       })
     })
   };
